@@ -1,0 +1,15 @@
+open up "Git GUI"
+open the project (should be listed under recent)
+remote-> fetch from -> origin
+merge-> local merge
+click merge on popup
+
+//do work/make changes
+
+click "rescan" on bottom menu
+click "stage Chages"
+type a message in bottom right text box describing changes
+click "commit"
+click "push"
+click push on popup
+
