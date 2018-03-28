@@ -7,10 +7,11 @@ import java.util.ArrayList;
  */
 
     public class card {
-        public int value;
-        public String suit;
-        public String displayValue;
-        public ArrayList<String> suitList;
+
+        private int value;
+        private String suit;
+        private String displayValue;
+        private ArrayList<String> suitList;
 
         public card(int Value, String Suit) {
             suitList = new ArrayList<String>();
