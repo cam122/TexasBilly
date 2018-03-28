@@ -16,7 +16,7 @@ public class Player1 extends Main {
     public void action(String input){
         if (input.equals("check")){
             check();
-        } else if
+        } else if ()
     }
     public void check(){
         System.out.println("check");
