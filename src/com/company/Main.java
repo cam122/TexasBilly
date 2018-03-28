@@ -8,9 +8,9 @@ public class Main {
 //    deal two cards to everyone
 
         //play of hand
-//    If the first or second card dealt is exposed, then this is considered a misdeal. The dealer then retrieves the card, reshuffles the deck, and again cuts the cards
+//    If the first or second com.company.card dealt is exposed, then this is considered a misdeal. The dealer then retrieves the com.company.card, reshuffles the deck, and again cuts the cards
 
-//    However, if any other hole card is exposed due to a dealer error, the deal continues as usual.
+//    However, if any other hole com.company.card is exposed due to a dealer error, the deal continues as usual.
 
 //     A misdeal is also declared if a player receives more than two hole cards by mistake
 
