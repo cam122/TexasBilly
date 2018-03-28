@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.ArrayList;
 
 /**
@@ -5,13 +7,12 @@ import java.util.ArrayList;
  */
 
     public class card {
-    public class Card {
         private int value;
         private String suit;
         private String displayValue;
         private ArrayList<String> suitList;
 
-        public Card(int Value, String Suit) {
+        public card(int Value, String Suit) {
             suitList = new ArrayList<String>();
             suitList.add("clubs");
             suitList.add("spades");
@@ -56,7 +57,5 @@ import java.util.ArrayList;
             return displayValue + " of "+suit;
         }
     }
-
-}
 
 
