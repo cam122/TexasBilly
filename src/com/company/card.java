@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 
     public class card {
+
         private int value;
         private String suit;
         private String displayValue;
