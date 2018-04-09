@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by mdinki on 3/28/2018.
  */
 
-    public class card {
+    public class card{
         private int value;
         private String suit;
         private String displayValue;
