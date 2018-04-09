@@ -1,4 +1,8 @@
+package com.company;
+
 import com.company.Main;
+
+import java.util.Scanner;
 
 /**
  * Created by cadolph on 3/27/2018.
@@ -8,7 +12,6 @@ public class Player1  {
 //  deal
 //    check or raise
 //
-
 
 
 }

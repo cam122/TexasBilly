@@ -18,7 +18,7 @@ import java.util.ArrayList;
             suitList.add("spades");
             suitList.add("hearts");
             suitList.add("diamonds");
-            if (Value > 1 && Value < 14) {
+            if (Value >= 1 && Value <= 14) {
                 value = Value;
                 if (value == 11) {
                     displayValue = "J";
