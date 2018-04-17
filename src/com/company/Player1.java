@@ -45,6 +45,7 @@ public class Player1 extends Main {
         if (input.equals("fold")){
             System.out.println("fold");
             inGame = false;
+
         } else if (input.equals("call")){
             System.out.println("call");
             money = money - hisBet;
