@@ -7,18 +7,10 @@ import java.util.Scanner;
 /**
  * Created by cadolph on 3/27/2018.
  */
-public class Player1 extends Main {
-    int money = 50;
-    int yourBet = 0;
-    boolean bet = false;
-    String card1;
-    String card2;
-    boolean x = true;
-    boolean inGame = true;
-    Scanner console = new Scanner(System.in);
+public class Player1 extends basePlayer{
+
     public Player1(String Card1, String Card2){
-        card1 = Card1;
-        card2 = Card2;
+        super(Card1,Card2);
     }
     public void action(String input){
         if (input.equals("check")){
@@ -47,8 +39,7 @@ public class Player1 extends Main {
             inGame = false;
 
         } else if (input.equals("call")){
-            System.out.println("call");
-            money = money - hisBet;
+            call(hisBet);
         } else if (input.equals("raise")) {
             while (x) {
                 System.out.println("select amount to raise by.");
@@ -66,9 +57,6 @@ public class Player1 extends Main {
             }
             x = true;
         }
-    }
-    public void check(){
-        System.out.println("check");
     }
     public boolean inGame(){
         return inGame;
