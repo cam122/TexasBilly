@@ -9,14 +9,14 @@ import java.util.Scanner;
  */
 public class Player1 extends basePlayer{
 
-    public Player1(String Card1, String Card2){
-        super(Card1,Card2);
+    public Player1(String Card1, String Card2, String Name){
+        super(Card1,Card2,Name);
     }
-    public void action(String input){
+    public void action(String input, int hisBet){
         if (input.equals("check")){
             check();
         } else if (input.equals("raise")) {
-            raise();
+            raise(hisBet);
         }
     }
     public void counter(String input, int hisBet){
@@ -25,13 +25,8 @@ public class Player1 extends basePlayer{
         } else if (input.equals("call")){
             call(hisBet);
         } else if (input.equals("raise")) {
-            raise1(hisBet);
+            call(hisBet);
+            raise(hisBet);
         }
-    }
-    public boolean inGame(){
-        return inGame;
-    }
-    public void endBet(){
-        bet = false;
     }
 }
