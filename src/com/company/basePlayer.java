@@ -13,26 +13,27 @@ public class basePlayer{
     String card2;
     boolean x = true;
     boolean inGame = true;
+    String name;
     Scanner console = new Scanner(System.in);
-    public basePlayer(String Card1, String Card2){
+    public basePlayer(String Card1, String Card2, String Name){
         card1 = Card1;
         card2 = Card2;
+        name = Name;
     }
     public void check(){
         System.out.println("check");
     }
-    public void raise(){
+    public void raise(int hisBet){
         while (x) {
-            System.out.println("select amount to raise by.");
-            int amount = Integer.parseInt(console.nextLine());
+            int amount = selection();
             if (amount < 5 || amount > money) {
                 System.out.println("invalid amount");
             }
             else if(amount >= 5 && amount <= money){
                 money = money-amount;
-                System.out.println("player 1 has raised by "+amount+" Dollers");
+                System.out.println(name + " has raised by "+amount+" Dollers");
                 x = false;
-                yourBet = amount;
+                yourBet = hisBet + amount;
                 bet = true;
             }
         }
@@ -43,24 +44,19 @@ public class basePlayer{
         inGame = false;
     }
     public void call(int hisBet) {
-        System.out.println("call");
         money = money - hisBet;
     }
-    public void raise1(int hisBet){
-        while (x) {
-            System.out.println("select amount to raise by.");
-            int amount = Integer.parseInt(console.nextLine());
-            if (amount < hisBet || amount > money) {
-                System.out.println("invalid amount");
-            }
-            else if(amount >= hisBet && amount <= money){
-                money = money-amount;
-                System.out.println("player 1 has raised by "+amount+" Dollers");
-                x = false;
-                yourBet = amount;
-                bet = true;
-            }
-        }
-        x = true;
+    public int selection(){
+        System.out.println("select amount to raise by.");
+        int amount = Integer.parseInt(console.nextLine());
+        return amount;
     }
+    public boolean inGame(){
+        return inGame;
+    }
+    public void endBet(){
+        bet = false;
+        yourBet = 0;
+    }
+    public boolean bet() { return bet; }
 }
