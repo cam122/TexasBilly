@@ -16,46 +16,16 @@ public class Player1 extends basePlayer{
         if (input.equals("check")){
             check();
         } else if (input.equals("raise")) {
-            while (x) {
-                System.out.println("select amount to raise by.");
-                int amount = Integer.parseInt(console.nextLine());
-                if (amount < 5 || amount > money) {
-                    System.out.println("invalid amount");
-                }
-                else if(amount >= 5 && amount <= money){
-                    money = money-amount;
-                    System.out.println("player 1 has raised by "+amount+" Dollers");
-                    x = false;
-                    yourBet = amount;
-                    bet = true;
-                }
-            }
-            x = true;
+            raise();
         }
     }
     public void counter(String input, int hisBet){
         if (input.equals("fold")){
-            System.out.println("fold");
-            inGame = false;
-
+            fold();
         } else if (input.equals("call")){
             call(hisBet);
         } else if (input.equals("raise")) {
-            while (x) {
-                System.out.println("select amount to raise by.");
-                int amount = Integer.parseInt(console.nextLine());
-                if (amount < hisBet || amount > money) {
-                    System.out.println("invalid amount");
-                }
-                else if(amount >= hisBet && amount <= money){
-                    money = money-amount;
-                    System.out.println("player 1 has raised by "+amount+" Dollers");
-                    x = false;
-                    yourBet = amount;
-                    bet = true;
-                }
-            }
-            x = true;
+            raise1(hisBet);
         }
     }
     public boolean inGame(){
