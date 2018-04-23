@@ -20,10 +20,10 @@ super(Card1,Card2,Name);
 
             public int CallRaiseFold(int amountNeededToCall) {
                 call(amountNeededToCall);
+                return(amountNeededToCall);
+                }
+
+
             }
 
-
-
-
-}
 
