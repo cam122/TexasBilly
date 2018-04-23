@@ -11,8 +11,8 @@ import java.util.ArrayList;
 
             public  Hand playerCards;
 
-            public CPU1() {
-
+            public CPU1(String Card1, String Card2, String Name) {
+super(Card1,Card2,Name);
 
                 playerCards = new Hand();
             }
