@@ -9,17 +9,10 @@ import java.util.Scanner;
  */
 public class Player1 extends basePlayer{
 
-    public Player1(String Card1, String Card2, String Name){
-        super(Card1,Card2,Name);
+    public Player1(String Name){
+        super(Name);
     }
-    public void action(String input, int hisBet){
-        if (input.equals("check")){
-            check();
-        } else if (input.equals("raise")) {
-            raise(hisBet);
-        }
-    }
-    public void counter(String input, int hisBet){
+    public void CallRaiseFold(String input, int hisBet){
         if (input.equals("fold")){
             fold();
         } else if (input.equals("call")){
