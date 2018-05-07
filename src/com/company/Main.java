@@ -4,8 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-//    shuffle cards
 
+//    shuffle cards
+card example = new card(2, "Spades");
+
+        System.out.println(example.toString());
+        example.setNumber(14);
+        example.setSuit(("Hearts"));
+        System.out.println(example.getNumber() + " of " + example.getSuit());
 //    deal two cards to everyone
 
         //play of hand
