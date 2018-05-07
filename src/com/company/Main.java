@@ -3,8 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-
-
+CPU1 name = new CPU1();
 //    shuffle cards
 card example = new card(2, "Spades");
 
@@ -13,7 +12,7 @@ card example = new card(2, "Spades");
         example.setSuit(("Hearts"));
         System.out.println(example.getNumber() + " of " + example.getSuit());
 //    deal two cards to everyone
-
+name.playerCards.addCards(new card(5,"hearts"));
         //play of hand
 //    If the first or second com.company.card dealt is exposed, then this is considered a misdeal. The dealer then retrieves the com.company.card, reshuffles the deck, and again cuts the cards
 

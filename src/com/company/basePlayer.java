@@ -9,15 +9,13 @@ public class basePlayer{
     int money = 50;
     int yourBet = 0;
     boolean bet = false;
-    String card1;
-    String card2;
+    Hand hand;
     boolean x = true;
     boolean inGame = true;
     String name;
     Scanner console = new Scanner(System.in);
-    public basePlayer(String Card1, String Card2, String Name){
-        card1 = Card1;
-        card2 = Card2;
+    public basePlayer(String Name){
+        hand = new Hand();
         name = Name;
     }
     public void check(){
